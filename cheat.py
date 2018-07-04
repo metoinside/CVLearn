@@ -22,5 +22,20 @@ print(blue, green, red)
 # Access portion of the Image
 corner = image[0:100, 0:100]
 
-#cv2.imshow("Shown Image", image)
+# Draw a line
+startPoint = (0, 0)
+endPoint = (300, 300)
+greenColor = (0, 255, 0)
+thickness = 3
+cv2.line(image, startPoint, endPoint, greenColor, thickness)
+
+# Draw rectangle
+cv2.rectangle(image, startPoint, endPoint, greenColor, thickness)
+# negative thickness fills the rectangle
+
+# Draw circle
+radius = 25
+cv2.circle(image, startPoint, radius, thickness)
+
+cv2.imshow("Shown Image", image)
 cv2.waitKey()
