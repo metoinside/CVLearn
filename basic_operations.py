@@ -41,4 +41,3 @@ elif (args["resize"]!=None):
 
 cv2.imshow("Result", result)
 cv2.waitKey(0)
-
